@@ -34,7 +34,7 @@ const Portfolio = () => {
         <div name="Portfolio" className='w-full bg-gradient-to-b from-black to-gray-800 text-white md:h-screen'>
             <div className='flex flex-col justify-center items-center max-w-screen-lg mx-auto p-4 lg:px-0'>
                 <div className='my-4 w-min'>
-                    <h1 className='text-4xl font-bold border-b-4'>Portfolio</h1>
+                    <h1 className='text-3xl font-bold border-b-4 md:text-4xl'>Portfolio</h1>
                 </div>
                 <div className='my-5 xxsm:text-lg md:text-xl'>
                     <p>Check out some of my work right here</p>
@@ -48,7 +48,7 @@ const Portfolio = () => {
                                     <img className='h-40 w-full rounded hover:scale-105 duration-300' src={image} alt="" />
                                 </div>
                                 <div className='py-4 bg-black'>
-                                    <p className='text-center text-xl font-semibold'>{projectName}</p>
+                                    <p className='text-center text-xl font-medium'>{projectName}</p>
                                 </div>
                                 <div className='flex flex-row justify-center'>
                                     {demo ?

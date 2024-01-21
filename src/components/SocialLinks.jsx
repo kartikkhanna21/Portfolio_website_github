@@ -9,7 +9,7 @@ const SocialLinks = () => {
         {
             id: 1,
             linkName:"LinkedIn",
-            component: <FaLinkedin className='inline mx-2' size={25} />,
+            component: <FaLinkedin className='mx-1 inline md:mx-2' size={25} />,
             url: "https://www.linkedin.com/in/kartik-khanna-73230a202/",
             download:false,
             style:"rounded-tr-md"
@@ -17,21 +17,21 @@ const SocialLinks = () => {
         {
             id: 2,
             linkName:"Github",
-            component: <FaGithub className='inline mx-2' size={25}/>,
+            component: <FaGithub className='inline mx-1 md:mx-2' size={25}/>,
             url: "https://github.com/kartikkhanna21",
             download:false
         },
         {
             id: 3,
             linkName:"Mail",
-            component: <CiMail className='inline mx-2' size={25}/>,
+            component: <CiMail className='inline mx-1 md:mx-2' size={25}/>,
             url: "mailto:kartikkhanna93@gmail.com",
             download:false
         },
         {
             id: 4,
             linkName:"Resume",
-            component: <CgNotes className='inline mx-2' size={25}/>,
+            component: <CgNotes className='inline mx-1 md:mx-2' size={25}/>,
             url: "/Kartik_Khanna_resume.pdf",
             download:true,
             style:"rounded-br-md"
@@ -40,16 +40,16 @@ const SocialLinks = () => {
 
     ]
     return (
-        <div className='lg:block fixed flex flex-col text-white top-[35%]'>
-            <ul >
+        <div className='fixed block top-[65%] left-[110%] lg:block text-white md:top-[35%] md:left-[0%]'>
+            <ul>
                 {
                     socialLinks.map(({ id, linkName,component, url,download,style }) => (
-                        <li key={id} className={"p-3 flex justify-between bg-gray-600 w-40 items-center cursor-pointer ml-[-100px] hover:ml-[-5px] duration-300" + " " + style }>
+                        <li key={id} className={"p-3 flex justify-between bg-gray-600 w-40 items-center cursor-pointer ml-[-100px] md:hover:ml-[-5px] duration-300" + " " + style }>
                             <a href={url} className='flex justify-between items-center w-full' 
                                 target='_blank' 
                                 rel='noreferrer' 
                                 download={download} >
-                                <span>{linkName}</span> 
+                                <span className='hidden md:block'>{linkName}</span> 
                                 {component}
                             </a>
                             

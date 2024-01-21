@@ -26,7 +26,7 @@ const Navbar = () => {
         {
             id: 5,
             link: "Contact"
-        },
+        }
 
     ]
     return (
@@ -48,9 +48,9 @@ const Navbar = () => {
 
                 <div onClick={() => { setNav(!nav) }} className='cursor-pointer pr-4 z-10 absolute right-0 bottom-4 md:hidden'>
                     {nav ?
-                        <IoClose size={45} />
+                        <IoClose className='size-9 mb-2' />
                         :
-                        <GiHamburgerMenu className='size-11 mb-1' />
+                        <GiHamburgerMenu className='size-9 mb-2' />
                     }
                 </div>
 
@@ -59,7 +59,7 @@ const Navbar = () => {
                         <ul className='flex flex-col justify-center items-center w-full h-screen absolute top-0 left-0 bg-gradient-to-b from-black to-gray-800'>
 
                             {links.map(({ id, link }) => (
-                                <li key={id} className='text-3xl text-gray-400 py-6 cursor-pointer font-normal hover:scale-105 duration-200'>
+                                <li key={id} className='text-2xl text-gray-400 py-6 cursor-pointer font-normal hover:scale-105 duration-200'>
                                     <Link onClick={()=>(setNav(!nav))} to={link} smooth duration={500}>{link}</Link>
                                 </li>
                             )
