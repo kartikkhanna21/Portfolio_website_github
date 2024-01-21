@@ -71,7 +71,7 @@ const Experience = () => {
         }
     ]
     return (
-        <div className='w-full bg-gradient-to-b from-gray-800 to-black text-white md:min-h-screen'>
+        <div name="Experience" className='w-full bg-gradient-to-b from-gray-800 to-black text-white md:min-h-screen'>
             <div className='flex flex-col justify-center items-center max-w-screen-lg mx-auto p-4 lg:px-0'>
                 <div className='my-4 w-min'>
                     <h1 className='text-4xl font-bold border-b-4'>Experience</h1>
@@ -87,8 +87,8 @@ const Experience = () => {
                                 <div className='flex flex-row justify-center'>
                                     <img className='p-5 h-28 rounded text-center' src={image} alt="" />
                                 </div>
-                                <div className={"py-2"+" "+bgcolor}>
-                                    <p className={"text-center text-xl"+" "+textColor}>{skillName}</p>
+                                <div className={"py-2"+ " " + bgcolor}>
+                                    <p className={"text-center text-xl" + " "+ textColor}>{skillName}</p>
                                 </div>
                             </div>
                         ))}

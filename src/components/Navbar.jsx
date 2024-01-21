@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoClose } from "react-icons/io5";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
     const [nav, setNav] = useState(false);
@@ -29,16 +30,16 @@ const Navbar = () => {
 
     ]
     return (
-        <div className="flex justify-between items-center w-full h-20 text-white bg-black p-3 fixed">
+        <div className="flex justify-between items-center w-full h-20 text-white bg-black py-2 px-3 fixed">
             <div>
-                <h1 className='font-signature text-5xl ml-2'>Kartik</h1>
+                <h1 className='font-signature text-4xl ml-2 md:text-5xl'>Kartik</h1>
             </div>
             <div >
                 <div>
                     <ul className='md:flex hidden'>
                         {links.map(({ id, link }) => (
                             <li key={id} className='text-gray-400 px-4 cursor-pointer font-medium hover:scale-105 duration-200'>
-                                {link}
+                                <Link to={link} smooth duration={500}>{link}</Link>
                             </li>
                         )
                         )}
@@ -49,7 +50,7 @@ const Navbar = () => {
                     {nav ?
                         <IoClose size={45} />
                         :
-                        <GiHamburgerMenu size={45} />
+                        <GiHamburgerMenu className='size-11 mb-1' />
                     }
                 </div>
 
@@ -59,7 +60,7 @@ const Navbar = () => {
 
                             {links.map(({ id, link }) => (
                                 <li key={id} className='text-3xl text-gray-400 py-6 cursor-pointer font-normal hover:scale-105 duration-200'>
-                                    {link}
+                                    <Link onClick={()=>(setNav(!nav))} to={link} smooth duration={500}>{link}</Link>
                                 </li>
                             )
                             )}

@@ -9,17 +9,17 @@ const Portfolio = () => {
             id: 1,
             projectName: "Project Management Tool",
             image: ProjectManagementApp,
-            demo: true,
+            demo: false,
             demoUrl: "",
-            codeUrl: ""
+            codeUrl: "https://github.com/kartikkhanna21/Project_management_tool"
         },
         {
             id: 2,
             projectName: "Burger Builder Application",
             image: BurgerApp,
-            demo: true,
+            demo: false,
             demoUrl: "",
-            codeUrl: ""
+            codeUrl: "https://github.com/kartikkhanna21/Burger_app_react"
         },
         {
             id: 3,
@@ -27,11 +27,11 @@ const Portfolio = () => {
             image: EmpManagement,
             demo: false,
             demoUrl: "",
-            codeUrl: ""
+            codeUrl: "https://github.com/kartikkhanna21/Employee-Management-system"
         }
     ]
     return (
-        <div className='w-full bg-gradient-to-b from-black to-gray-800 text-white md:h-screen'>
+        <div name="Portfolio" className='w-full bg-gradient-to-b from-black to-gray-800 text-white md:h-screen'>
             <div className='flex flex-col justify-center items-center max-w-screen-lg mx-auto p-4 lg:px-0'>
                 <div className='my-4 w-min'>
                     <h1 className='text-4xl font-bold border-b-4'>Portfolio</h1>
@@ -53,7 +53,10 @@ const Portfolio = () => {
                                 <div className='flex flex-row justify-center'>
                                     {demo ?
                                         <div className='px-2 py-4 mx-4 cursor-pointer hover:scale-110 duration-200' >
-                                            <a href={demoUrl} target="_blank">
+                                            <a
+                                                href={demoUrl}
+                                                target="_blank"
+                                                rel='noreferrer'>
                                                 <button className='px-6 py-2 rounded bg-blue-600'>
                                                     Demo
                                                 </button>
@@ -64,7 +67,10 @@ const Portfolio = () => {
                                     }
 
                                     <div className='px-2 py-4 mx-4 cursor-pointer hover:scale-110 duration-200'>
-                                        <a href={demoUrl} target="_blank">
+                                        <a
+                                            href={codeUrl}
+                                            target="_blank"
+                                            rel='noreferrer'>
                                             <button className='px-6 py-2 rounded bg-black shadow-2xl'>
                                                 Code
                                             </button>
