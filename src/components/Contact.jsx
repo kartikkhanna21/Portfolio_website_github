@@ -7,7 +7,7 @@ const Contact = () => {
                 <div className='my-4 w-min'>
                     <h1 className='text-3xl font-bold border-b-4 md:text-4xl'>Contact</h1>
                 </div>
-                <div className='my-5 xxsm:text-lg md:text-xl'>
+                <div className='my-5 text-sm xsm:text-lg md:text-xl'>
                     <p>Submit the form below to get in touch with me</p>
                 </div>
 
@@ -27,7 +27,7 @@ const Contact = () => {
 
                         <div className='flex flex-row justify-center py-4 hover:scale-110 duration-200' >
                             <a href=" " target="_blank">
-                                <button className='px-8 py-2 rounded bg-blue-500 shadow-2xl'>
+                                <button className='px-8 py-2 rounded bg-blue-400 shadow-2xl'>
                                     Let's Talk
                                 </button>
                             </a>

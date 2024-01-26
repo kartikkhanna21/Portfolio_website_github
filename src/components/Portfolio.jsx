@@ -36,7 +36,7 @@ const Portfolio = () => {
                 <div className='my-4 w-min'>
                     <h1 className='text-3xl font-bold border-b-4 md:text-4xl'>Portfolio</h1>
                 </div>
-                <div className='my-5 xxsm:text-lg md:text-xl'>
+                <div className='my-5 text-sm xsm:text-lg md:text-xl'>
                     <p>Check out some of my work right here</p>
                 </div>
 
