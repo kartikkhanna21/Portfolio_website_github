@@ -13,9 +13,7 @@ const About = () => {
                 </div>
 
                 <div >
-                    <p className='my-5 xsm:text-lg md:text-xl'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum pariatur, vel similique sint, nobis aspernatur ut praesentium explicabo ipsam aliquid quasi laboriosam et culpa possimus repudiandae quisquam ullam maiores ab unde. Fugiat odio mollitia nemo alias.
-                        Commodi facilis atque nulla vero voluptatem explicabo.
-                        Quibusdam, magni quo! Eum cupiditate debitis labore.</p>
+                    <p className='my-5 xsm:text-lg md:text-xl'>Experienced web developer with a solid 2-year track record in building dynamic and responsive web applications. Proficient in a diverse set of technologies, including React for front-end development, Spring Boot for back-end services, MySQL for database management, and Java for overall application architecture. Skilled in implementing modern and sleek user interfaces using Tailwind CSS. Adept at collaborating in cross-functional teams to deliver high-quality software solutions that meet both client and business needs.</p>
                 </div>
             </div>
 

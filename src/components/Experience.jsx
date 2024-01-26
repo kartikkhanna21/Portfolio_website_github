@@ -7,6 +7,7 @@ import spring from "../assets/spring_png.png";
 import github from "../assets/github_png.png";
 import tailwind from "../assets/tailwind_png.png";
 import sql from "../assets/mysql_png.png";
+import java from "../assets/java_png.png";
 const Experience = () => {
     const Projects = [
         {
@@ -49,20 +50,27 @@ const Experience = () => {
         },
         {
             id: 6,
-            skillName: "My Sql",
-            image: sql,
+            skillName: "Java",
+            image: java,
             style:"shadow-inner shadow-blue-700 ",
             bgcolor:"bg-blue-700"
         },
         {
             id: 7,
+            skillName: "My Sql",
+            image: sql,
+            style:"shadow-inner shadow-sky-800 ",
+            bgcolor:"bg-sky-800"
+        },
+        {
+            id: 8,
             skillName: "React",
             image: react,
             style:"shadow-inner shadow-blue-400 ",
             bgcolor:"bg-blue-400"
         },
         {
-            id: 8,
+            id: 9,
             skillName: "Github",
             image: github,
             style:"shadow-inner shadow-white ",
