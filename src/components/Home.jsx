@@ -8,10 +8,10 @@ const Home = () => {
             <div className='max-w-screen-lg  mx-auto px-4 flex flex-col items-center justify-center md:flex-row h-screen'>
                 <div className='pt-20'>
                     <div>
-                        <h1 className=' text-3xl font-bold py-4  xxsm:text-4xl xsm:text-5xl md:text-7xl'>I'm a Full Stack Developer</h1>
+                        <h1 className=' text-3xl font-bold py-4 xxsm:text-4xl xsm:text-5xl md:text-7xl'>I'm a Full Stack Developer</h1>
                     </div>
                     <div >
-                        <p className='py-4 text-md md:text-lg md:py-4'>I have 2 years of experience building and desgining software.
+                        <p className='text-md xxsm:py-4 md:text-lg md:py-4'>I have 2 years of experience building and desgining software.
                             Currently, I love to work on web application using technologies like React, Tailwind, Springboot and Mysql.
                         </p>
                     </div>
