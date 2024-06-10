@@ -2,6 +2,7 @@ import React from 'react'
 import EmpManagement from "../assets/Employee_management_app.png";
 import BurgerApp from "../assets/burger_app.png";
 import ProjectManagementApp from "../assets/projectmanagement_app.png";
+import quizApp from "../assets/Quiz_App.png";
 
 const Portfolio = () => {
     const Projects = [
@@ -23,6 +24,14 @@ const Portfolio = () => {
         },
         {
             id: 3,
+            projectName: "Quiz Application",
+            image: quizApp,
+            demo: true,
+            demoUrl: "https://quiz-app-iota-gules.vercel.app/",
+            codeUrl: "https://github.com/kartikkhanna21/https://github.com/kartikkhanna21/React_Quiz_App"
+        },
+        {
+            id: 4,
             projectName: "Employee Management Tool",
             image: EmpManagement,
             demo: false,
