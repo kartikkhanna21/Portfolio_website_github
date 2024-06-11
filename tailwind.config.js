@@ -5,15 +5,15 @@ module.exports = {
   ],
   theme: {
     extend: {},
-    fontFamily:{
+    fontFamily: {
       signature: ["Great Vibes"],
     },
     screens: {
-      'xxsm':'380px',
+      'xxsm': '380px',
 
-      'xsm':'420px',
+      'xsm': '420px',
       // => @media (min-width: 420px) { ... }
-      
+
       'sm': '640px',
       // => @media (min-width: 640px) { ... }
 
@@ -30,6 +30,16 @@ module.exports = {
       // => @media (min-width: 1536px) { ... }
     }
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities }) {
+      const newUtilities = {
+        '.fade-mask': {
+          ' -webkit-mask-image': 'linear-gradient(to bottom, black 50%, transparent 100%)',
+          'mask-image': 'linear-gradient(to bottom, black 10%, transparent 100%)',
+        },
+      };
+      addUtilities(newUtilities, ['responsive', 'hover']);
+    },
+  ],
 }
 

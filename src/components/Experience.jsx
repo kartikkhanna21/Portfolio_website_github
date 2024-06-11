@@ -80,7 +80,7 @@ const Experience = () => {
     ]
     return (
         <div name="Experience" className='w-full bg-gradient-to-b from-gray-800 to-black text-white md:min-h-screen'>
-            <div className='flex flex-col justify-center items-center max-w-screen-lg mx-auto p-4 lg:px-0'>
+            <div className='flex flex-col justify-center items-center max-w-screen-lg mx-auto px-6 py-4 lg:px-0'>
                 <div className='my-4 w-min'>
                     <h1 className='text-3xl font-bold border-b-4 md:text-4xl'>Experience</h1>
                 </div>
