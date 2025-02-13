@@ -6,6 +6,7 @@ import react from "../assets/react_png.png";
 import spring from "../assets/spring_png.png";
 import github from "../assets/github_png.png";
 import tailwind from "../assets/tailwind_png.png";
+import angular from "../assets/angular_png.png";
 import sql from "../assets/mysql_png.png";
 import java from "../assets/java_png.png";
 const Experience = () => {
@@ -71,11 +72,11 @@ const Experience = () => {
         },
         {
             id: 9,
-            skillName: "Github",
-            image: github,
-            style:"shadow-inner shadow-white ",
-            bgcolor:"bg-white",
-            textColor:"text-black"
+            skillName: "Angular",
+            image: angular,
+            style:"shadow-inner shadow-red-600 ",
+            bgcolor:"bg-pink-700",
+            textColor:"text-white"
         }
     ]
     return (
